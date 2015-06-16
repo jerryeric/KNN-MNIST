@@ -125,7 +125,7 @@ int main(int argc, char** argv)
 
 	// Print summary
 	cout << type << " " << k << " " << max << " " << correct << " " << (max - correct) << " " << (float(max-correct)*100.0/max) << endl;
-	auto end = clock();
+	clock_t end = clock();
 	cout << "The time used in this calculation is: " << double(end - begin) / CLOCKS_PER_SEC << endl; 
 	// Clean up
 	delete testSet;
