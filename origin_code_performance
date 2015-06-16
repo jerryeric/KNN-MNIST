@@ -1,0 +1,3 @@
+./mnist-knn -d ./ -k 1 -t full -n 250
+full 1 250 27 223 89.2
+The error rate is 89.2%
