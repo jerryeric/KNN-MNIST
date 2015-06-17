@@ -31,7 +31,7 @@ uint32 KNN(MNISTDataset &trainSet, MNISTDataset &testSet, uint32 k, uint32 max, 
             imgQueue.push(current_image);
         }
         //Counts label frequency, stores in array by index
-        uint32 labelFreq[10];
+        uint32 labelFreq[10] = {0};
         for(uint32 iter = 0; iter < k; iter++){
             distLabel neighbor = imgQueue.top();
             labelFreq[neighbor.second] += 1;
